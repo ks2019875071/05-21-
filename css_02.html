@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>relative 배치</title>
+<style>
+	div {
+		display : inline-block;
+		height : 50px;
+		width : 50px;
+		border : 1px solid lightgray;
+		text-align : center;
+		color : white;
+		background : red;
+	}
+	#down:hover {
+		position : relative;
+		left : 20px;
+		right : 20px;
+		background : green;
+	}
+	/* h 블록에 마우스를 올리면 상대배치함. */
+	#up:hover {
+		position : relative;
+		left : 20px;
+		right : 20px;
+		background : green;
+	}
+	/* k 블록에 마우스를 올리면 상대배치함. */
+</style>
+</head>
+<body>
+<h3>상대배치, relative</h3>
+<hr>
+	<div>T</div>
+	<div id="down">h</div>
+	<div>a</div>
+	<div>n</div>
+	<div id="up">k</div>
+	<div>s</div>
+</body>
+</html>
